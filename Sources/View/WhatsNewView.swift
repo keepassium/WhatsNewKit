@@ -152,6 +152,7 @@ private extension WhatsNewView {
                 .image
                 .view()
                 .frame(width: self.layout.featureImageWidth)
+                .dynamicTypeSize(.xSmall ... .large)
             VStack(
                 alignment: .leading,
                 spacing: self.layout.featureVerticalSpacing
