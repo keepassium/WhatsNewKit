@@ -42,22 +42,22 @@ extension WhatsNewView.FooterPadding: ViewModifier {
                     trailing: 150
                 )
             )
-        } else if self.verticalSizeClass == .compact {
+        } else if self.horizontalSizeClass == .compact {
             content.padding(
                 .init(
                     top: 0,
-                    leading: 40,
-                    bottom: 35,
-                    trailing: 40
+                    leading: 32,
+                    bottom: 32,
+                    trailing: 32
                 )
             )
         } else {
             content.padding(
                 .init(
                     top: 0,
-                    leading: 20,
-                    bottom: 80,
-                    trailing: 20
+                    leading: 32,
+                    bottom: 32,
+                    trailing: 32
                 )
             )
         }
