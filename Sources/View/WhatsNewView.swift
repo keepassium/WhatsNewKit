@@ -61,6 +61,7 @@ extension WhatsNewView: View {
                 ) {
                     // Title
                     self.title
+                        .accessibilityHeading(.h1)
                     // Feature List
                     VStack(
                         alignment: .leading,
@@ -211,6 +212,7 @@ private extension WhatsNewView {
                 )
                 #endif
                 .foregroundColor(secondaryAction.foregroundColor)
+                .accessibilitySortPriority(-2)
             }
             // Primary Action Button
             Button(
@@ -236,6 +238,7 @@ private extension WhatsNewView {
             #if os(macOS)
             .keyboardShortcut(.defaultAction)
             #endif
+            .accessibilitySortPriority(-1)
         }
     }
     
